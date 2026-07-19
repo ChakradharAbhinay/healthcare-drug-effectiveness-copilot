@@ -11,9 +11,7 @@ app = FastAPI(
 
 @app.get("/")
 def root():
-    return {
-        "message": "Healthcare Drug Effectiveness Copilot API is running"
-    }
+    return {"message": "Healthcare Drug Effectiveness Copilot API is running"}
 
 
 app.include_router(health.router)
